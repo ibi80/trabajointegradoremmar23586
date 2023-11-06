@@ -1,21 +1,14 @@
 
 
-
 @font-face {
     font-family: "Roboto-Regular";
     src: url(../assets/font/Roboto/Roboto-Regular.ttf);
 }
-
-/*RESET*/
 *{
     margin: 0;
     padding: 0;
     font-family: "Roboto-Regular", Verdana, Geneva, Tahoma, sans-serif;
 }
-
-
-
-/*HEADER*/
 
 header {
     height: 100px;
@@ -25,11 +18,12 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center; 
-    position: sticky;    
+   /* position: sticky;  */  
 }
 header h2{
     position:absolute;
-    left: 160px;
+    left: 150px;
+    font-size: 20px;
     }
 .logo{
     height: 80px;
@@ -120,35 +114,34 @@ header h2{
 .boton-ticket:hover{
        font-size: 12px;
        font-weight: bold;
-       transition: 1s;
+       transition: 0.5s;
        color: black;
        background: rgb(57, 233, 104);
 }
 
 /*ORADORES*/
 
-.personas {
+.oradores {
     margin-top: 2rem;
     font-size: 0.8rem;
     
     
 }
-.personas h3{
+.oradores h3{
     font-size: 1.7rem;
     text-align: center;
     
 }
-.personas p{
+.oradores p{
     text-align: center;
 }
 
 .contenedor-card{
     display: flex;
-    position: relative;
-    align-items: center;
     justify-content: center;
+    align-items: center; 
     margin: auto;
-    
+    position: relative;
     
 }
 .contenedor-card h5{
@@ -274,34 +267,11 @@ header h2{
     transition: 1s;
 }
 
-
-/*FOOTER*/
-.pie{
-    background: linear-gradient(rgb(29, 55, 68), rgb(32, 83, 114));
-    display: flex;
-    justify-content:space-between;
-    padding: 25px;
-    align-items:center;
-}
-.nav-pie a{
-    color:white;
-    text-decoration: none;
-    margin: 30px;  
- 
-}
-
-.nav-pie a:hover{
-    font-size: 1.2rem;
-    transition: 1s;
-    color: rgb(22, 227, 22);}
-
-    /*PAGINA DE COMPRA DE TICKET*/
+/*PAGINA DE COMPRA DE TICKET*/
     
-    .ticket{
-        text-align: center;
-    }
-
-
+.ticket{
+    text-align: center;
+}
     /*pagina de compra*/
     .tarjetas{
         display: flex;
@@ -371,6 +341,21 @@ header h2{
     display: block;
 }
 
+/*FOOTER*/
+.pie{
+    background: linear-gradient(rgb(29, 55, 68), rgb(32, 83, 114));
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+}
+.nav-pie a{
+    color:white;
+    text-decoration: none;
+    margin: 15px;
+    font-size: 15px; 
+}
+
+    
 
 
 
